@@ -1,7 +1,6 @@
-# school_neuralnet_paris_2026
+# CNN 2026 Spike Sorting
 
-
-Material for SpikeInterface Tutorial @ Neuralnet 2026
+Material for SpikeInterface Tutorial @ CNN 2026
 
 ## Data spike sorting
 
@@ -10,9 +9,6 @@ You will need to download this [folder](https://filesender.renater.fr/?s=downloa
 Please unzip all in sub folders.
 
 Note that this dataset is originally from [dandiset 000939](https://dandiarchive.org/dandiset/000939/0.260512.1701/files?location=sub-A3702) but in a shorter version (90s). You can eventually download the original nwb file but is not mandatory.
-
-
-
 
 
 ## Installation spike sorting
@@ -40,77 +36,6 @@ uv run code .
 ```
 
 If you like traditional virtual environments, please visit [this page](https://github.com/SpikeInterface/spikeinterface/tree/main/installation_tips) to install on your laptop python+spikeinterface.
-
-
-
-## Schedule
-
-
-**November 23th - 14:00-18:00 CET**
-
- * Introduction to Spike Sorting (PierreY 60min)
- * Introduction to `SpikeInterface` (Sam 60min)
- * Pause
- * Install checks (10min)
- * Tutorial 1 Reading + Manipulation (45 min - Sam)
-    - Read and visualise data
-    - The importance of probes
-    - Splitting by channels 
-    - (optional) Make your own probe
- * Tutorial 2 Preprocessing (45 min - PierreY)
-    - Apply and visualize preprocessing 
-      - filter
-      - CMR
-    - Detect bad channels
-    - Saturation
-    - Motion
-
-
-**November 24th - 9:00-12:00 CET**
-
- * Tutorial 3 Spike sort and Analysis(60 min - PierreY)
-    - Run a spike sorter (LUPIN / Kilosort4 / Dartsort)
-    - Create a `SortingAnalyzer` to explore your sorting
-    - Compute some extensions
-    - Play with the extension outputs
-
- * Tutorial 4 Curation manual : GUI (45 min Sam)
-    - GUI - viewer only
-    - GUI - manual curation
-
- * Pause
-
- * Tutorial 5 Curation (45 min - PierreY)
-    - Automatic:
-      - Simple, threshold-based curation
-      - Curation using ML models / Bombcell
-      - Merging units
-
- * Tutorial 6 Curation manual : GUI (20 min Sam)
-    - generate curation_dict
-    - GUI - semi-automatic curation
-
- * Tutorial 7 sorter comparison (20min - Sam)
-    - Compare sorter
-    - Compare sorter GUI
-
-
-
-**November 24th - 14:00-18:00 CET**
-
- * Spike sorting on your own dataset.
- * Or spike sorting on theses availables datasets
-
-
-**November 25th - 9:00-12:00 CET**
-
- * Spike train analysis presentation (PierreLM)
- * Spike train analysis tutorial (PierreLM)
-
-The spike train analysis session (pynapple, Python and Julia) has its own environment and
-installation instructions: see [`notebooks_spiketrain_analysis/README.md`](notebooks_spiketrain_analysis/README.md).
-
-
 
 
 
@@ -145,7 +70,6 @@ You can use the `spikeinterface.extractor.read_openephys()` function to read the
 Human glutamatergic neurons induced via ngn2 method. Plated 100k on CorePlate 1W38/60 3Brain, recorded after 55 days in 
 culture with 3Brain BioCAM system. 
 You can use the `spikeinterface.extractor.read_biocam()` function to read the data. 
-
 
 > [!IMPORTANT]  
 > The 3Brain BioCAM system saves the data in unsigned integers. You should convert it to signed integers for a smooth
