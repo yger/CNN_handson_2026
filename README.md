@@ -19,8 +19,8 @@ management tool for Python.
 Open your Terminal app and cd (change directory) to where you like to keep github repos. Then clone this repo, and navigate to the `notebooks` folder of it by entering the following commands into your Terminal:
 
 ``` shell
-git clone https://github.com/samuelgarcia/school_neuralnet_paris_2026.git
-cd school_neuralnet_paris_2026
+git clone https://github.com/yger/CNN_handson_2026.git
+cd CNN_handson_2026
 ```
 
 Now open jupyter lab (you don't need to install this - uv will take care of it) using uv:
