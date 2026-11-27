@@ -9,17 +9,14 @@ from spikeinterface_gui import run_mainwindow
 
 
 # change this path to point to the folder your data is in
-# base_folder = Path("/home/samuel/Documents/DataSpikeSorting/school_neuralnet_2026/")
-base_folder = Path("/mnt/data/sam/DataSpikeSorting/school_neuralnet_2026/")
-# base_folder = Path("/home/pierre/school_neuralnet_2026/")
+home = Path.home()
+base_data_folder = Path(home / "cnn_2026")
 
-
-data_folder = base_folder / "data"
-# name = "sub-A3702_ses-191126-90s"
+data_folder = base_data_folder / "data"
 name = "sub-A3702_ses-191126-3600s"
+result_folder = base_data_folder / "results" / name
+result_folder.mkdir(exist_ok=True, parents=True)
 
-result_folder = base_folder / "results" / name
-result_folder.mkdir(exist_ok=True)
 
 sorter_name = "lupin"
 # sorter_name = "kilosort4"
